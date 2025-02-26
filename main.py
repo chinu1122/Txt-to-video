@@ -80,21 +80,21 @@ async def account_login(bot: Client, m: Message):
        "I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me ⟰ /saini Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 Group 🥱✜" ,url=f"https://t.me/+taZCy5OkoMUwNzI9") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 Group 🥱✜" ,url=f"https://t.me/+qutXY5xbN0I4OWY1") ],
                     [
-                    InlineKeyboardButton("✜ NIKHIL SAINI ✜" ,url="https://t.me/Nikhil_saini_khe") ],
+                    InlineKeyboardButton("✜ BRIJESH ✜" ,url="http://t.me/Oye_brijesh") ],
                     [
-                    InlineKeyboardButton("FOLLOW " ,url="https://www.instagram.com/nikhil.saini.khe") ]                               
+                    InlineKeyboardButton("FOLLOW " ,url="no") ]                               
             ]))
 
 @bot.on_message(filters.command(["stop"]))
 async def restart_handler(_, m):
-    await m.reply_text("♦ 𝐒𝐭𝐨𝐩ped Baby💞 ♦", True)
+    await m.reply_text("♦ 𝐒𝐭𝐨𝐩ped 💞 ♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["saini"]))
+@bot.on_message(filters.command(["brijesh"]))
 
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️')
@@ -170,9 +170,9 @@ async def upload(bot: Client, m: Message):
     await input3.delete(True)
 
     # Default credit message
-    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
+    credit = "️@Oye_brijesh 🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '@Nikhil_saini_khe 🕊️'
+        CR = '@Oye_brijesh 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -270,8 +270,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**╭━━━━━━━━━━━╮\n🎬 VIDEO ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━━╯\n\n📄 Title: {name1} {res} 🥀🅽🅸🅺🅷🅸🅻🦅.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**╭━━━━━━━━━━━╮\n📁 FILE ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━━╯\n\n📄 Title: {name1} 🥀🆂🅰🅸🅽🅸🦅.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**╭━━━━━━━━━━━╮\n🎬 VIDEO ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━━╯\n\n📄 Title: {name1} {res} 🥀𝐁𝐑𝐈𝐉𝐄𝐒𝐇🦅.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**╭━━━━━━━━━━━╮\n📁 FILE ID: {str(count).zfill(3)}.\n╰━━━━━━━━━━━╯\n\n📄 Title: {name1} 🥀𝐁𝐑𝐈𝐉𝐄𝐒𝐇🦅.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
@@ -327,7 +327,7 @@ async def upload(bot: Client, m: Message):
                           
                 else:
                     Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By NIKHIL SAINI**")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By 𝐁𝐑𝐈𝐉𝐄𝐒𝐇**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
